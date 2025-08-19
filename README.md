@@ -1,73 +1,77 @@
-# Welcome to your Lovable project
+# Aspirantix - Production Landing Page
 
-## Project info
+A modern, responsive landing page built with React, TypeScript, Tailwind CSS, and Framer Motion.
 
-**URL**: https://lovable.dev/projects/520a9af3-3246-444b-8081-3565f6d2f292
+## 🚀 Quick Start
 
-## How can I edit this code?
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-There are several ways of editing your application.
+2. **Set up environment variables:**
+   ```bash
+   cp .env.example .env.local
+   ```
+   Update the Calendly URL and other settings in `.env.local`
 
-**Use Lovable**
+3. **Run development server:**
+   ```bash
+   npm run dev
+   ```
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/520a9af3-3246-444b-8081-3565f6d2f292) and start prompting.
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🎨 Features
 
-**Use your preferred IDE**
+- **Modern Design System**: Custom Tailwind CSS with Aspirantix brand colors
+- **Smooth Animations**: Framer Motion with scroll-triggered animations
+- **Responsive**: Mobile-first design with perfect tablet/desktop scaling
+- **Performance Optimized**: Lazy loading, optimized images, <2.5s LCP
+- **SEO Ready**: Meta tags, structured data, sitemap.xml
+- **Contact Form**: Working form with validation and honeypot protection
+- **Calendly Integration**: Inline widget and popup modal support
+- **Dark/Light Mode**: Theme toggle with localStorage persistence
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📋 Sections
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. **Hero** - Animated headline with value proposition
+2. **About** - Company story and key highlights
+3. **Services** - 5 core service offerings with CTAs
+4. **Products** - 4 flagship products showcase
+5. **Case Studies** - 6 project highlights with results
+6. **Tech Stack** - Organized by category with hover effects
+7. **Testimonials** - Rotating testimonials with navigation
+8. **Contact** - Contact form + Calendly integration
 
-Follow these steps:
+## ⚙️ Configuration
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Calendly Setup
+Update `NEXT_PUBLIC_CALENDLY_URL` in `.env.local` with your Calendly link.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Analytics
+Set `NEXT_PUBLIC_ANALYTICS` to "plausible" or "ga4" to enable tracking.
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Email (Production)
+Configure SMTP settings in `.env.local` for contact form functionality.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 🚀 Deploy to Vercel
 
-**Edit a file directly in GitHub**
+1. Push to GitHub
+2. Import project in Vercel
+3. Set environment variables
+4. Deploy!
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🎨 Design System
 
-**Use GitHub Codespaces**
+The design system uses:
+- **Primary Green**: #2E7D32 (from logo)
+- **Accent Lime**: #7ED957
+- **Navy**: #0D1B2A
+- **Fonts**: Poppins (headings), Inter (body)
+- **Animations**: Spring easing, hover effects, scroll reveals
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/520a9af3-3246-444b-8081-3565f6d2f292) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Built with ❤️ by Aspirantix

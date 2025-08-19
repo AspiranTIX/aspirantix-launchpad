@@ -1,14 +1,76 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState, useEffect } from 'react';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import Hero from '@/components/sections/Hero';
+import About from '@/components/sections/About';
+import Services from '@/components/sections/Services';
+import Products from '@/components/sections/Products';
+import CaseStudies from '@/components/sections/CaseStudies';
+import TechStack from '@/components/sections/TechStack';
+import Testimonials from '@/components/sections/Testimonials';
+import Contact from '@/components/sections/Contact';
 
-const Index = () => {
+export default function Index() {
+  const [activeSection, setActiveSection] = useState('');
+
+  const handleSectionClick = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const openCalendly = () => {
+    // Calendly popup functionality would go here
+    console.log('Opening Calendly popup...');
+  };
+
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '-50% 0px -50% 0px',
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, observerOptions);
+
+    const sections = document.querySelectorAll('section[id]');
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Header 
+        activeSection={activeSection}
+        onSectionClick={handleSectionClick}
+        onBookCall={openCalendly}
+      />
+      
+      <main>
+        <Hero 
+          onBookCall={openCalendly}
+          onSeeWork={() => handleSectionClick('products')}
+        />
+        <About />
+        <Services onBookCall={openCalendly} />
+        <Products />
+        <CaseStudies onBookCall={openCalendly} />
+        <TechStack />
+        <Testimonials />
+        <Contact onBookCall={openCalendly} />
+      </main>
+      
+      <Footer />
     </div>
   );
-};
-
-export default Index;
+}
