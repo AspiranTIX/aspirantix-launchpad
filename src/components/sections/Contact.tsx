@@ -164,21 +164,16 @@ export default function Contact({ onBookCall }: ContactProps) {
               </Button>
             </div>
 
-            {/* Calendly Inline Widget Placeholder */}
+            {/* Calendly Inline Widget */}
             <div className="p-6 rounded-2xl bg-card border border-border/50">
               <h4 className="text-lg font-bold font-poppins mb-4">
                 Schedule Your Call
               </h4>
               <div 
-                className="calendly-inline-widget min-h-[400px] bg-muted/30 rounded-lg flex items-center justify-center"
-                data-url="https://calendly.com/your-handle/intro-call-30min"
-              >
-                <div className="text-center text-muted-foreground">
-                  <div className="text-4xl mb-2">📅</div>
-                  <p>Calendly widget will load here</p>
-                  <p className="text-sm mt-2">Configure your Calendly URL in environment variables</p>
-                </div>
-              </div>
+                className="calendly-inline-widget"
+                data-url="https://calendly.com/aspirantix/30min"
+                style={{ minWidth: '320px', height: '630px' }}
+              ></div>
             </div>
           </motion.div>
 

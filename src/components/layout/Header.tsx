@@ -16,6 +16,7 @@ const navigation = [
   { name: 'Case Studies', href: 'case-studies' },
   { name: 'Tech Stack', href: 'tech-stack' },
   { name: 'Testimonials', href: 'testimonials' },
+  { name: 'Project Idea', href: 'project-idea' },
   { name: 'Contact', href: 'contact' },
 ];
 

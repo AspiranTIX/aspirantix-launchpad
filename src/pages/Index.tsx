@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useCalendly } from '@/hooks/useCalendly';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Hero from '@/components/sections/Hero';
@@ -8,10 +9,12 @@ import Products from '@/components/sections/Products';
 import CaseStudies from '@/components/sections/CaseStudies';
 import TechStack from '@/components/sections/TechStack';
 import Testimonials from '@/components/sections/Testimonials';
+import ProjectIdea from '@/components/sections/ProjectIdea';
 import Contact from '@/components/sections/Contact';
 
 export default function Index() {
   const [activeSection, setActiveSection] = useState('');
+  const { openCalendlyPopup } = useCalendly();
 
   const handleSectionClick = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -21,8 +24,7 @@ export default function Index() {
   };
 
   const openCalendly = () => {
-    // Calendly popup functionality would go here
-    console.log('Opening Calendly popup...');
+    openCalendlyPopup();
   };
 
   useEffect(() => {
@@ -67,6 +69,7 @@ export default function Index() {
         <CaseStudies onBookCall={openCalendly} />
         <TechStack />
         <Testimonials />
+        <ProjectIdea onBookCall={openCalendly} />
         <Contact onBookCall={openCalendly} />
       </main>
       
