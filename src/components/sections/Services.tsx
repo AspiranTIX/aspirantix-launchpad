@@ -18,33 +18,39 @@ interface ServicesProps {
 const services = [
   {
     icon: Globe,
-    title: 'Django Web Apps & APIs',
+    title: 'Product Design & Prototyping',
+    description: 'Complete product conceptualization from user research to interactive prototypes and system architecture design.',
+    features: ['User Research & Analysis', 'UI/UX Design', 'Interactive Prototypes', 'System Architecture']
+  },
+  {
+    icon: Brain,
+    title: 'Requirement Analysis & Planning',
+    description: 'Comprehensive project analysis, technical specifications, and development roadmap creation.',
+    features: ['Business Requirements', 'Technical Specifications', 'Project Roadmaps', 'Risk Assessment']
+  },
+  {
+    icon: MessageSquare,
+    title: 'Django Development & APIs',
     description: 'Full-stack Django applications with REST/GraphQL APIs, real-time features, and scalable architecture.',
     features: ['Django REST Framework', 'Real-time WebSockets', 'PostgreSQL/Redis', 'Authentication & Security']
   },
   {
     icon: Brain,
-    title: 'AI/ML Model Training',
-    description: 'Custom machine learning models including YOLO object detection, NLP, and AI text detection systems.',
-    features: ['YOLO Object Detection', 'NLP & Text Analysis', 'Custom Model Training', 'AI Text Detection']
-  },
-  {
-    icon: MessageSquare,
-    title: 'AI Chatbots',
-    description: 'Intelligent chatbots with Vector DB integration for Q&A, PDF processing, and LMS assistants.',
-    features: ['Vector Database Q&A', 'PDF Document Chat', 'LMS Integration', 'Context-Aware Responses']
+    title: 'AI/ML Solutions',
+    description: 'Custom AI models, chatbots with Vector DB, object detection, and intelligent automation systems.',
+    features: ['YOLO Object Detection', 'Vector Database Q&A', 'NLP & Text Analysis', 'AI Chatbots']
   },
   {
     icon: GraduationCap,
-    title: 'EdTech Automations',
-    description: 'Educational technology solutions including course video summarization and learning management.',
-    features: ['Video Summarization', 'Course Analytics', 'Learning Pathways', 'Progress Tracking']
+    title: 'EdTech & Automations',
+    description: 'Educational technology solutions including course video summarization and learning management systems.',
+    features: ['Video Summarization', 'PDF Document Chat', 'LMS Integration', 'Learning Analytics']
   },
   {
     icon: Cloud,
-    title: 'AWS Cloud Solutions',
-    description: 'Complete cloud infrastructure with EC2, S3, Lambda, auto-scaling, monitoring, and security.',
-    features: ['Auto-scaling EC2', 'S3 & CDN', 'Serverless Lambda', 'Monitoring & Security']
+    title: 'Cloud Deployment & Scaling',
+    description: 'Complete cloud infrastructure with AWS, auto-scaling, monitoring, security, and production deployment.',
+    features: ['AWS Infrastructure', 'Auto-scaling Solutions', 'CI/CD Pipelines', 'Production Monitoring']
   }
 ];
 
@@ -68,11 +74,11 @@ export default function Services({ onBookCall }: ServicesProps) {
             Our Services
           </Badge>
           <h2 className="text-3xl md:text-5xl font-bold font-poppins mb-6">
-            <span className="text-gradient">End-to-End</span> Development Solutions
+            <span className="text-gradient">Complete Project</span> Lifecycle Management
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            From AI-powered applications to scalable cloud infrastructure, 
-            we provide comprehensive development services that drive business growth.
+            From initial concept and design to final deployment and scaling, 
+            we handle every aspect of your project with expertise and precision.
           </p>
         </motion.div>
 

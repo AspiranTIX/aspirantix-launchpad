@@ -2,7 +2,8 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Database, FileText, Search, Eye, Bot, Target } from 'lucide-react';
+import { ArrowRight, Database, FileText, Search, Eye, Bot, Target, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface CaseStudiesProps {
   onBookCall: () => void;
@@ -10,6 +11,7 @@ interface CaseStudiesProps {
 
 const caseStudies = [
   {
+    id: 'qa-chatbot-vector-db',
     icon: Database,
     title: 'Q&A Chatbot with Vector DB',
     description: 'Built an intelligent Q&A system using Qdrant vector database for semantic search and context-aware responses.',
@@ -18,6 +20,7 @@ const caseStudies = [
     gradient: 'from-blue-500 to-purple-500'
   },
   {
+    id: 'lms-video-summarization',
     icon: FileText,
     title: 'LMS Course Video Summarization',
     description: 'Automated video content analysis and summarization for educational platforms using AI/ML models.',
@@ -124,7 +127,7 @@ export default function CaseStudies({ onBookCall }: CaseStudiesProps) {
                   </div>
 
                   {/* Tech Stack */}
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {study.tags.map((tag, tagIndex) => (
                       <span
                         key={tagIndex}
@@ -134,6 +137,20 @@ export default function CaseStudies({ onBookCall }: CaseStudiesProps) {
                       </span>
                     ))}
                   </div>
+
+                  {/* View Details Link */}
+                  {study.id && (
+                    <Link to={`/case-study/${study.id}`}>
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        className="w-full justify-between group-hover:bg-primary/10 transition-colors duration-300"
+                      >
+                        View Full Case Study
+                        <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+                      </Button>
+                    </Link>
+                  )}
                 </div>
               </motion.div>
             );

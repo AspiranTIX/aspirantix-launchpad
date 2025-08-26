@@ -43,9 +43,9 @@ export default function Hero({ onBookCall, onSeeWork }: HeroProps) {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold font-poppins mb-6 leading-tight"
           >
-            We build{' '}
+            From{' '}
             <span className="text-gradient relative">
-              intelligent software
+              concept to delivery
               <motion.div
                 className="absolute -bottom-2 left-0 right-0 h-1 bg-accent/30 rounded-full"
                 initial={{ scaleX: 0 }}
@@ -53,7 +53,7 @@ export default function Hero({ onBookCall, onSeeWork }: HeroProps) {
                 transition={{ duration: 1, delay: 1 }}
               />
             </span>
-            {' '}with Django, AI, and Cloud
+            {' '}we build complete solutions
           </motion.h1>
 
           {/* Subtext */}
@@ -64,10 +64,13 @@ export default function Hero({ onBookCall, onSeeWork }: HeroProps) {
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed"
           >
             <p className="mb-4">
-              With 7+ years of experience and a 10+ member team, we deliver products that scale.
+              <strong>Product Design • Prototyping • System Architecture • Development • Deployment</strong>
+            </p>
+            <p className="mb-4">
+              With 7+ years handling complete project lifecycles, our 10+ member team transforms ideas into intelligent, scalable products using Django, AI, and Cloud technologies.
             </p>
             <p>
-              Our portfolio includes <span className="text-primary font-semibold">SendWIN</span>, <span className="text-primary font-semibold">ChatCoach</span>, <span className="text-primary font-semibold">MaltaCard</span>, and <span className="text-primary font-semibold">UPx</span>.
+              Proven track record: <span className="text-primary font-semibold">SendWIN</span>, <span className="text-primary font-semibold">ChatCoach</span>, <span className="text-primary font-semibold">MaltaCard</span>, and <span className="text-primary font-semibold">UPx</span>.
             </p>
           </motion.div>
 
