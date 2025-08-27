@@ -1,48 +1,82 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { ExternalLink, Globe, MessageSquare, CreditCard, TrendingUp } from 'lucide-react';
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import {
+  CreditCard,
+  ExternalLink,
+  Globe,
+  MessageSquare,
+  TrendingUp,
+} from "lucide-react";
+import { useInView } from "react-intersection-observer";
 
 const products = [
   {
     icon: Globe,
-    name: 'SendWIN',
-    description: 'Cloud-based browser solution for multi-login session management and secure browsing environments.',
-    tags: ['Django', 'AWS EC2', 'Docker', 'Redis', 'WebRTC'],
-    gradient: 'from-blue-500 to-cyan-500',
-    features: ['Multi-session Management', 'Cloud Browser', 'Secure Environments', 'Team Collaboration']
+    name: "SendWIN",
+    description:
+      "Cloud-based browser solution for multi-login session management and secure browsing environments.",
+    tags: ["Django", "AWS EC2", "Docker", "Redis", "WebRTC"],
+    gradient: "from-blue-500 to-cyan-500",
+    features: [
+      "Multi-session Management",
+      "Cloud Browser",
+      "Secure Environments",
+      "Team Collaboration",
+    ],
+    link: "#",
   },
   {
     icon: MessageSquare,
-    name: 'ChatCoach',
-    description: 'AI-powered coaching and training chatbot with personalized learning pathways and progress tracking.',
-    tags: ['AI/ML', 'NLP', 'Django', 'Vector DB', 'PyTorch'],
-    gradient: 'from-purple-500 to-pink-500',
-    features: ['AI Coaching', 'Personalized Learning', 'Progress Analytics', 'Smart Recommendations']
+    name: "ChatCoach",
+    description:
+      "AI-powered coaching and training chatbot with personalized learning pathways and progress tracking.",
+    tags: ["AI/ML", "NLP", "Django", "Vector DB", "PyTorch"],
+    gradient: "from-purple-500 to-pink-500",
+    features: [
+      "AI Coaching",
+      "Personalized Learning",
+      "Progress Analytics",
+      "Smart Recommendations",
+    ],
+    link: "#",
   },
   {
     icon: CreditCard,
-    name: 'MaltaCard',
-    description: 'Secure fintech solution built on Django with advanced cloud infrastructure and compliance features.',
-    tags: ['FinTech', 'Django', 'PostgreSQL', 'AWS', 'Security'],
-    gradient: 'from-green-500 to-emerald-500',
-    features: ['Secure Payments', 'Compliance Ready', 'Risk Management', 'Real-time Processing']
+    name: "MaltaCard",
+    description:
+      "Secure fintech solution built on Django with advanced cloud infrastructure and compliance features.",
+    tags: ["FinTech", "Django", "PostgreSQL", "AWS", "Security"],
+    gradient: "from-green-500 to-emerald-500",
+    features: [
+      "Secure Payments",
+      "Compliance Ready",
+      "Risk Management",
+      "Real-time Processing",
+    ],
+    link: "#",
   },
   {
     icon: TrendingUp,
-    name: 'UPx',
-    description: 'Smart analytics platform with ML-driven insights for business intelligence and data visualization.',
-    tags: ['ML', 'Analytics', 'Django', 'React', 'Data Viz'],
-    gradient: 'from-orange-500 to-red-500',
-    features: ['ML Insights', 'Real-time Analytics', 'Custom Dashboards', 'Predictive Models']
-  }
+    name: "UPx",
+    description:
+      "Smart analytics platform with ML-driven insights for business intelligence and data visualization.",
+    tags: ["ML", "Analytics", "Django", "React", "Data Viz"],
+    gradient: "from-orange-500 to-red-500",
+    features: [
+      "ML Insights",
+      "Real-time Analytics",
+      "Custom Dashboards",
+      "Predictive Models",
+    ],
+    link: "#",
+  },
 ];
 
 export default function Products() {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1
+    threshold: 0.1,
   });
 
   return (
@@ -55,16 +89,19 @@ export default function Products() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <Badge variant="outline" className="mb-6 px-4 py-2 text-sm font-medium">
+          <Badge
+            variant="outline"
+            className="mb-6 px-4 py-2 text-sm font-medium"
+          >
             Flagship Products
           </Badge>
           <h2 className="text-3xl md:text-5xl font-bold font-poppins mb-6">
-            Products That{' '}
-            <span className="text-gradient">Scale & Deliver</span>
+            Products That <span className="text-gradient">Scale & Deliver</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Our flagship products showcase our expertise in building production-ready, 
-            scalable applications that solve real-world business challenges.
+            Our flagship products showcase our expertise in building
+            production-ready, scalable applications that solve real-world
+            business challenges.
           </p>
         </motion.div>
 
@@ -83,7 +120,9 @@ export default function Products() {
                   {/* Header with Icon and Gradient */}
                   <div className="flex items-center justify-between mb-6">
                     <div className="flex items-center">
-                      <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${product.gradient} flex items-center justify-center mr-4 shadow-medium`}>
+                      <div
+                        className={`w-14 h-14 rounded-xl bg-gradient-to-br ${product.gradient} flex items-center justify-center mr-4 shadow-medium`}
+                      >
                         <Icon className="w-7 h-7 text-white" />
                       </div>
                       <div>
@@ -92,13 +131,21 @@ export default function Products() {
                         </h3>
                       </div>
                     </div>
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                    </Button>
+                    {product.link && (
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 relative z-10"
+                        asChild
+                      >
+                        <a
+                          href={product.link}
+                          rel="noopener noreferrer"
+                        >
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
+                      </Button>
+                    )}
                   </div>
 
                   {/* Description */}
@@ -109,7 +156,10 @@ export default function Products() {
                   {/* Features Grid */}
                   <div className="grid grid-cols-2 gap-3 mb-6">
                     {product.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center text-sm">
+                      <div
+                        key={featureIndex}
+                        className="flex items-center text-sm"
+                      >
                         <div className="w-1.5 h-1.5 bg-accent rounded-full mr-2 flex-shrink-0" />
                         <span className="text-muted-foreground">{feature}</span>
                       </div>
@@ -123,7 +173,10 @@ export default function Products() {
                         key={tagIndex}
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={inView ? { opacity: 1, scale: 1 } : {}}
-                        transition={{ duration: 0.3, delay: index * 0.2 + tagIndex * 0.1 }}
+                        transition={{
+                          duration: 0.3,
+                          delay: index * 0.2 + tagIndex * 0.1,
+                        }}
                         className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full border border-primary/20"
                       >
                         {tag}
@@ -150,8 +203,8 @@ export default function Products() {
             Want to Build Something Similar?
           </h3>
           <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-            Our team can help you develop custom solutions tailored to your specific business needs. 
-            Let's discuss your project requirements.
+            Our team can help you develop custom solutions tailored to your
+            specific business needs. Let's discuss your project requirements.
           </p>
           <Button
             size="lg"
