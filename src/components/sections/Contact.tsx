@@ -163,18 +163,6 @@ export default function Contact({ onBookCall }: ContactProps) {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
-
-            {/* Calendly Inline Widget */}
-            <div className="p-6 rounded-2xl bg-card border border-border/50">
-              <h4 className="text-lg font-bold font-poppins mb-4">
-                Schedule Your Call
-              </h4>
-              <div 
-                className="calendly-inline-widget"
-                data-url="https://calendly.com/aspirantix/30min"
-                style={{ minWidth: '320px', height: '630px' }}
-              ></div>
-            </div>
           </motion.div>
 
           {/* Right Column - Contact Form */}
