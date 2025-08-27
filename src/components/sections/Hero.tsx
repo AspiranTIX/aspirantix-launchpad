@@ -30,7 +30,7 @@ export default function Hero({ onBookCall, onSeeWork }: HeroProps) {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center px-4 py-2 mb-8 text-sm font-medium rounded-full bg-primary/10 text-primary border border-primary/20 backdrop-blur-sm"
+            className="inline-flex items-center px-4 py-2 mb-8 mt-16 text-sm font-medium rounded-full bg-primary/10 text-primary border border-primary/20 backdrop-blur-sm"
           >
             <span className="w-2 h-2 bg-accent rounded-full mr-2 animate-pulse" />
             7+ Years • 10+ Engineers • Production Ready
