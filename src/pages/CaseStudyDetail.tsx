@@ -98,40 +98,57 @@ const caseStudiesData: Record<string, CaseStudyData> = {
     id: 'lms-video-summarization',
     icon: FileText,
     title: 'LMS Course Video Summarization',
-    subtitle: 'Automated content analysis and intelligent summarization',
-    description: 'Developed an AI-powered system that automatically analyzes educational videos and generates comprehensive summaries, key points, and interactive content for enhanced learning experiences.',
-    challenge: 'Educational institutions were struggling with the time-intensive process of creating course summaries and key takeaways from video content. Manual summarization was taking educators 3-4 hours per video, limiting course development speed.',
-    solution: 'We created an automated pipeline using advanced AI models for video transcription, content analysis, and intelligent summarization. The system extracts key concepts, generates timestamped summaries, and creates interactive elements.',
+    subtitle: 'AI-Powered Video Content Discovery & Summarization Platform',
+    description: 'Built an intelligent video summarization platform that transforms visual course content into searchable, summarizable knowledge with tiered AI processing for both free and premium users.',
+    challenge: 'Educational institutions and online learning platforms struggled with managing massive video libraries: Content Overload (thousands of videos made navigation overwhelming), Time-Intensive Review (manual viewing wasted hours), Poor Discovery (keyword search couldn\'t capture video context), Learning Inefficiency (students lacked quick previews), Scalability Issues (manual curation didn\'t scale), and Accessibility Barriers (visual content wasn\'t searchable). The goal: build an intelligent, scalable system to automatically understand, summarize, and recommend video content for both free and premium users.',
+    solution: 'We designed an AI-powered video summarization platform with intelligent processing: Multi-Platform Integration (YouTube + hosting services) → Frame Extraction (AWS S3) → Tiered AI Processing (Free: BLIP + Mistral embeddings; Premium: Gemini Vision + embeddings) → Vector Search Engine (Weaviate) → Django (async) + Celery backend → React frontend with WebSockets. Free users get cost-efficient processing while premium users enjoy superior Gemini Vision analysis and lightning-fast API access.',
     results: [
-      'Reduced content creation time by 80% - from 4 hours to 45 minutes',
-      'Improved student engagement by 60% through structured summaries',
-      'Increased course completion rates by 35%',
-      'Generated 500+ automated summaries within first 6 months'
+      '<2s search across millions of video entries',
+      '95% reduction in manual video curation effort',
+      'Boosted course discovery & completion rates significantly',
+      'Optimized costs with successful tiered freemium model',
+      'Students quickly identify relevant content without full viewing',
+      'Hidden course materials gained visibility and discoverability',
+      'Visual content became fully searchable and accessible',
+      'Instructors easily discovered supplementary materials',
+      'Successful freemium → premium conversion rates',
+      'Automated workflows improved operational efficiency',
+      'Personalized recommendations drove user retention',
+      'Differentiated platform with advanced AI capabilities'
     ],
-    technologies: ['OpenAI Whisper', 'GPT-4', 'Django', 'Celery', 'FFmpeg', 'PostgreSQL', 'AWS S3', 'Redis'],
-    timeline: '4 months',
-    teamSize: '5 developers',
-    category: 'EdTech',
+    technologies: ['BLIP (free tier)', 'Gemini Vision (premium)', 'Mistral embeddings', 'Gemini embeddings', 'Django (async)', 'Celery', 'Weaviate Vector DB', 'PostgreSQL', 'React', 'WebSockets', 'AWS S3', 'YouTube API'],
+    timeline: '6 months',
+    teamSize: '8 developers',
+    category: 'EdTech & AI',
     image: '/lovable-uploads/742334e5-8095-4ec8-9210-39132715718b.png',
     metrics: [
-      { label: 'Time Saved', value: '80%', description: 'Content creation efficiency' },
-      { label: 'Engagement Boost', value: '60%', description: 'Student interaction increase' },
-      { label: 'Completion Rate', value: '+35%', description: 'Course completion improvement' },
-      { label: 'Accuracy Score', value: '92%', description: 'Summary quality rating' }
+      { label: 'Summarization Accuracy', value: '88%', description: 'AI content analysis precision' },
+      { label: 'Search Response Time', value: '<2s', description: 'Video search across millions' },
+      { label: 'Time Saved', value: '65%', description: 'vs Manual Review' },
+      { label: 'User Satisfaction', value: '4.6/5', description: 'Platform rating' }
     ],
     keyFeatures: [
-      'Automatic video transcription and analysis',
-      'AI-generated chapter breakdowns',
-      'Key concept extraction and highlighting',
-      'Interactive timeline with summary points',
-      'Multi-format export (PDF, HTML, slides)',
-      'Integration with popular LMS platforms'
+      'Multi-platform video ingestion & bulk import',
+      'Intelligent frame analysis (BLIP + Gemini Vision)',
+      'Sub-second semantic search with Weaviate',
+      'Personalized summarization with adaptive length',
+      'Smart recommendations based on behavior + content similarity',
+      'Real-time progress updates during video analysis',
+      'Tiered freemium experience (BLIP vs Gemini)',
+      'Mobile-optimized responsive UI with WebSockets'
     ],
     learnings: [
-      'Combining multiple AI models yields better results than single-model approaches',
-      'Custom fine-tuning on educational content improves summarization quality',
-      'Real-time processing requires careful resource management and queuing',
-      'User feedback integration is essential for continuous model improvement'
+      'BLIP provided optimal cost vs performance balance for free tier users',
+      'Self-hosted Mistral embeddings significantly reduced API costs vs external services',
+      'Celery task queuing prevented UI blocking during intensive video analysis',
+      'Weaviate delivered exceptional performance for real-time similarity search at scale',
+      'Async Django architecture proved crucial for handling concurrent video processing requests',
+      'AWS S3 scaled seamlessly for storing millions of extracted video frames',
+      'Task queuing & intelligent caching strategies dramatically improved response times',
+      'Freemium model with clear premium differentiation drove both adoption and conversions',
+      'Early cost-planning and resource optimization enabled sustainable scaling',
+      'Real-time status updates and mobile optimization were critical for user engagement',
+      'Continuous feedback loops significantly improved recommendation accuracy over time'
     ]
   }
 };
