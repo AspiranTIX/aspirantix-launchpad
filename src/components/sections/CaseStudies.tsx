@@ -29,6 +29,7 @@ const caseStudies = [
     gradient: 'from-green-500 to-teal-500'
   },
   {
+    id: 'pdf-book-chatbot-lms',
     icon: Search,
     title: 'PDF Book Chatbot for LMS',
     description: 'Interactive chatbot that answers questions from PDF textbooks and course materials with precise citations.',
