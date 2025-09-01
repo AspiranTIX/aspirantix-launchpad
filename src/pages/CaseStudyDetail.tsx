@@ -48,40 +48,50 @@ const caseStudiesData: Record<string, CaseStudyData> = {
     id: 'qa-chatbot-vector-db',
     icon: Database,
     title: 'Q&A Chatbot with Vector Database',
-    subtitle: 'Intelligent semantic search and context-aware responses',
-    description: 'Built an advanced Q&A system using Qdrant vector database for semantic search, enabling natural language queries with highly accurate, context-aware responses.',
-    challenge: 'The client needed an intelligent customer support system that could understand natural language queries and provide accurate answers from their extensive knowledge base. Traditional keyword-based search was failing to capture semantic meaning and context.',
-    solution: 'We implemented a sophisticated vector database solution using Qdrant, combined with advanced NLP models for semantic understanding. The system converts both queries and knowledge base content into high-dimensional vectors, enabling semantic similarity matching.',
+    subtitle: 'Intelligent Document Analysis & Query System',
+    description: 'Built an advanced Q&A system powered by vector database technology and retrieval pipelines, turning unstructured data across multiple formats (PDF, CSV, DOCX, HTML, TXT) into a semantic knowledge base with real-time intelligent responses.',
+    challenge: 'Organizations struggled to extract meaningful insights from vast, unstructured data scattered across formats like PDF, CSV, DOCX, HTML, and TXT. Traditional keyword-based search failed to capture semantic meaning, leading to information silos, hours of manual document review, poor query accuracy, scalability challenges with large datasets, and dependence on subject matter experts for routine queries. The need: a real-time intelligent system capable of understanding and retrieving knowledge across multiple document types.',
+    solution: 'We developed a comprehensive Q&A chatbot powered by vector database technology with a sophisticated architecture: Data Ingestion Layer for bulk processing of multiple formats → LangChain preprocessing & parsing → OpenAI Small-3 embeddings for high-quality vectors → Qdrant for similarity search & storage → Dual Retrieval System (hybrid + semantic) → AI Response Generation via integrated Gemini + OpenAI through LangChain → Modern Django (async) backend with Next.js frontend.',
     results: [
-      'Reduced support queries by 70% through accurate self-service',
-      'Achieved 95% accuracy in response relevance',
-      'Cut average response time from 24 hours to under 30 seconds',
-      'Increased customer satisfaction scores by 40%'
+      'Reduced query response time from hours to seconds',
+      'Achieved 92% query accuracy with semantic + hybrid retrieval',
+      'Handled thousands of documents without performance degradation',
+      'Boosted team productivity with 85% time savings vs manual search',
+      'Knowledge democratization - insights accessible across teams',
+      'Faster decision-making with real-time access to data',
+      'Optimized expert resources with less reliance on SMEs',
+      'Unlocked document value - previously unused data became searchable'
     ],
-    technologies: ['Qdrant Vector DB', 'Python', 'Django', 'NLP', 'OpenAI API', 'PostgreSQL', 'Redis', 'Docker'],
-    timeline: '3 months',
-    teamSize: '4 developers',
+    technologies: ['Django (async)', 'LangChain', 'Qdrant Vector DB', 'OpenAI Small-3', 'Gemini', 'GPT models', 'Next.js (SSR)', 'PostgreSQL', 'Multi-format loaders'],
+    timeline: '4 months',
+    teamSize: '6 developers',
     category: 'AI/ML',
     image: '/lovable-uploads/742334e5-8095-4ec8-9210-39132715718b.png',
     metrics: [
-      { label: 'Query Accuracy', value: '95%', description: 'Response relevance score' },
-      { label: 'Support Reduction', value: '70%', description: 'Decrease in manual tickets' },
-      { label: 'Response Time', value: '<30s', description: 'Average query response' },
-      { label: 'User Satisfaction', value: '4.8/5', description: 'Customer rating' }
+      { label: 'Query Accuracy', value: '92%', description: 'Semantic relevance score' },
+      { label: 'Time Saved', value: '85%', description: 'Productivity gain vs manual search' },
+      { label: 'Response Time', value: '<2s', description: 'Average query response' },
+      { label: 'User Satisfaction', value: '4.7/5', description: 'Customer rating' }
     ],
     keyFeatures: [
-      'Semantic search with vector similarity',
-      'Context-aware response generation',
-      'Multi-language support',
-      'Real-time learning from interactions',
-      'Admin dashboard for knowledge management',
-      'API integration with existing systems'
+      'Multi-format ingestion (PDF, CSV, DOCX, HTML, TXT)',
+      'Hybrid retrieval (semantic + keyword search)',
+      'Real-time, context-aware responses',
+      'Bulk document upload & automated content chunking',
+      'Intuitive chat interface with streaming responses',
+      'Document source attribution for trust & transparency',
+      'Scalable async architecture for high concurrency',
+      'Advanced preprocessing pipelines for accuracy'
     ],
     learnings: [
-      'Vector databases significantly outperform traditional search for semantic queries',
-      'Fine-tuning embedding models on domain-specific data improves accuracy by 25%',
-      'Implementing feedback loops allows the system to continuously improve',
-      'Proper chunking strategies are crucial for optimal retrieval performance'
+      'OpenAI Small-3 embeddings provided best balance of cost vs accuracy',
+      'Hybrid retrieval outperformed single-method approaches by combining semantic + keyword precision',
+      'Django\'s async processing was critical for scalability and handling high concurrency',
+      'Robust preprocessing pipelines directly improved accuracy and search relevance',
+      'Qdrant proved ideal for real-time similarity search with excellent performance',
+      'LangChain simplified multi-model orchestration and integration complexity',
+      'Simple, intuitive UX drove fast adoption across teams',
+      'Metadata enrichment significantly boosted search relevance and user satisfaction'
     ]
   },
   'lms-video-summarization': {
