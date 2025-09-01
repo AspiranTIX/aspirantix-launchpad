@@ -150,6 +150,67 @@ const caseStudiesData: Record<string, CaseStudyData> = {
       'Real-time status updates and mobile optimization were critical for user engagement',
       'Continuous feedback loops significantly improved recommendation accuracy over time'
     ]
+  },
+  'pdf-book-chatbot-lms': {
+    id: 'pdf-book-chatbot-lms',
+    icon: FileText,
+    title: 'PDF Book Chatbot for LMS',
+    subtitle: 'Intelligent PDF Document Analysis & Interactive Learning Assistant',
+    description: 'Built a sophisticated PDF chatbot system that combines advanced parsing, multimodal content understanding, and conversational AI to transform static PDFs into interactive, conversational learning companions with real-time question answering capabilities.',
+    challenge: 'Educational institutions and learners faced major obstacles with PDF-based course materials: Content Accessibility (PDFs with mixed formats like text, images, tables were hard to navigate), Inefficient Research (students wasted hours searching lengthy PDFs manually), Multimodal Content Loss (visual data like charts and diagrams was ignored by traditional readers), Knowledge Fragmentation (content scattered across multiple PDFs created silos), Static Interaction (PDFs didn\'t allow questioning or interactive exploration), Citation Difficulty (referencing and maintaining academic integrity was cumbersome), and Format Variability (different PDF encodings led to inconsistent extraction quality). The need: build an intelligent system that transforms static PDFs into interactive, conversational learning companions.',
+    solution: 'We built a comprehensive PDF chatbot system with Advanced PDF Processing Pipeline: Dual extraction (Unstructured + Gemini Vision) for text + images → AI-powered image recognition with inline descriptions → Structure-preserving parsing for layout and context → Universal format support across all PDF encodings. Intelligent Knowledge System: Weaviate vector DB for semantic organization → Hybrid retrieval (semantic + keyword search) → OpenAI Small-3 embeddings for contextual accuracy → Page-level reference tracking for integrity. Conversational AI Interface: Multi-model integration (GPT, Claude, Gemini) → Comparative AI responses for deeper insights → Model auto-selection based on query type → Export options (PDF, DOCX, TXT, JSON). Streamlined Architecture: Django backend with templating & async workflows → SQL database for user sessions + metadata → Optimized real-time query pipeline.',
+    results: [
+      'Sub-second responses for complex multimodal queries',
+      '96% extraction accuracy across varied PDF formats',
+      'Full visual content capture with AI-generated image descriptions',
+      'Hybrid retrieval outperformed traditional PDF search by 40%',
+      '70%+ time savings in concept research and study preparation',
+      'Improved comprehension through interactive Q&A learning',
+      'Enhanced accessibility with visual content descriptions',
+      'Transformed passive reading into active learning experiences',
+      'Intuitive natural language querying for complex documents',
+      'Multi-perspective answers from multiple AI models',
+      'Page-level citations ensured academic trust and integrity',
+      'Multi-format export supported diverse study workflows'
+    ],
+    technologies: ['Unstructured library', 'Gemini Vision', 'OpenAI Small-3 embeddings', 'GPT', 'Claude', 'Gemini', 'Weaviate Vector DB', 'Django', 'SQL database', 'Hybrid retrieval', 'Custom parsing', 'Multi-model APIs'],
+    timeline: '5 months',
+    teamSize: '7 developers',
+    category: 'EdTech & AI',
+    image: '/lovable-uploads/742334e5-8095-4ec8-9210-39132715718b.png',
+    metrics: [
+      { label: 'Content Extraction', value: '96%', description: 'Accuracy across PDF formats' },
+      { label: 'Query Response Time', value: '<1.5s', description: 'Average response time' },
+      { label: 'Research Time Saved', value: '78%', description: 'vs Manual PDF search' },
+      { label: 'User Satisfaction', value: '4.8/5', description: 'Overall platform rating' }
+    ],
+    keyFeatures: [
+      'Dual text + image PDF extraction with universal format support',
+      'Multimodal integration with inline AI-generated descriptions',
+      'Semantic + keyword hybrid retrieval for optimal accuracy',
+      'Page-level referencing & citations for academic integrity',
+      'Multi-model conversational AI interface (GPT, Claude, Gemini)',
+      'Export to PDF, DOCX, TXT, JSON formats',
+      'Real-time interactive Q&A with document context',
+      'Structure-preserving parsing for layout and context retention'
+    ],
+    learnings: [
+      'Dual extraction (Unstructured + Gemini Vision) significantly outperformed single-method approaches',
+      'Image description integration boosted comprehension & accessibility for visual learners',
+      'Hybrid search improved relevance by 40% compared to semantic-only approaches',
+      'Weaviate proved ideal for real-time semantic search with excellent performance',
+      'Efficient pipelines enabled real-time interactions without compromising accuracy',
+      'SQL + Vector DB architecture split optimized both storage and retrieval performance',
+      'Django templating streamlined development and maintained code organization',
+      'Natural language queries transformed user engagement and learning outcomes',
+      'Page-level citations built essential trust with researchers and academic users',
+      'Export features became critical for user workflows and adoption',
+      'Users highly valued multi-AI perspectives for complex queries',
+      'Smart chunking balanced context preservation with response speed',
+      'OpenAI Small-3 provided the best cost-performance ratio for embeddings',
+      'Caching strategies significantly reduced response latency for common queries',
+      'Robust error handling was essential for managing corrupted or complex PDFs'
+    ]
   }
 };
 
