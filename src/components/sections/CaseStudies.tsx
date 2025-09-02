@@ -55,6 +55,7 @@ const caseStudies = [
     gradient: 'from-cyan-500 to-blue-500'
   },
   {
+    id: 'predictive-analytics-platform',
     icon: Target,
     title: 'Predictive Analytics Platform',
     description: 'ML-powered platform for business forecasting and trend analysis with real-time data processing.',

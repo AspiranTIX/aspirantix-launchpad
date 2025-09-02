@@ -271,6 +271,68 @@ const caseStudiesData: Record<string, CaseStudyData> = {
       'Systematic model versioning enabled safe updates and rollback capabilities when needed',
       'Robust access controls were essential for protecting sensitive marine research data'
     ]
+  },
+  'predictive-analytics-platform': {
+    id: 'predictive-analytics-platform',
+    icon: Target,
+    title: 'Predictive Analytics Platform',
+    subtitle: 'Advanced Stock Price Forecasting & Anomaly Detection System',
+    description: 'Developed a sophisticated predictive analytics platform leveraging advanced deep learning architectures and anomaly detection algorithms to provide accurate stock price forecasting and market insight generation for informed financial decision-making.',
+    challenge: 'Financial markets present unprecedented complexity for investors, traders, and financial institutions seeking to make data-driven investment decisions: Market Volatility Unpredictability - Traditional analysis methods failed to capture complex patterns in stock price movements and market fluctuations. Information Overload - Vast amounts of financial data created analysis paralysis, making it difficult to identify actionable insights. Timing Critical Decisions - Split-second trading decisions required real-time predictive capabilities that manual analysis couldn\'t provide. Risk Management Complexity - Inability to detect anomalous market behavior led to significant financial losses during market disruptions. Historical Data Utilization - Decades of valuable market data remained underutilized due to lack of sophisticated analytical tools. Model Accuracy Requirements - Financial predictions demanded extremely high precision, as small errors could result in substantial monetary losses. Real-Time Processing Needs - Markets operate continuously, requiring systems capable of processing and analyzing data in real-time. Financial professionals needed an intelligent system that could accurately predict stock movements while identifying potential market anomalies before they impact investment portfolios.',
+    solution: 'Developed a sophisticated predictive analytics platform leveraging advanced deep learning architectures and anomaly detection algorithms to provide accurate stock price forecasting and market insight generation. Advanced Deep Learning Architecture: LSTM Implementation with Long Short-Term Memory networks for capturing long-term dependencies in stock price patterns, GRU Integration with Gated Recurrent Unit models for enhanced computational efficiency and pattern recognition, Comparative Analysis through dual-model approach enabling performance comparison and ensemble prediction capabilities, and Sequential Processing with time-series optimization for financial data temporal relationship analysis. Comprehensive Data Engineering Pipeline: Historical Data Integration with 14 years of Apple Inc. stock data from Yahoo Finance providing robust training foundation, Multi-Dimensional Features with integration of Open, Close, High, and Low prices for comprehensive market analysis, Data Preprocessing through advanced normalization and feature engineering for optimal model performance, and Quality Assurance with automated data validation and cleaning processes ensuring prediction accuracy. Intelligent Anomaly Detection System: Market Fluctuation Identification with real-time detection of significant price movements and market disruptions, Percentage Variance Analysis through mathematical calculation of price midpoint differences for anomaly scoring, Alert Generation with automated notification system for unusual market behavior detection, and Risk Assessment through quantitative risk evaluation based on historical patterns and current market conditions.',
+    results: [
+      'GRU model achieved superior Mean Squared Error of 3.7516e-4, outperforming traditional forecasting methods',
+      'LSTM model delivered competitive MSE of 7.0807e-4, providing robust alternative prediction capability',
+      'Successfully detected 95% of significant market fluctuations before major price movements',
+      'Real-time prediction generation enabling immediate response to market changes',
+      'Sophisticated algorithms minimized false alerts while maintaining high sensitivity to genuine anomalies',
+      'Improved investment decision accuracy through data-driven insights and predictions',
+      'Early anomaly detection enabled proactive risk management and portfolio protection',
+      'Automated analysis eliminated hours of manual market research and data processing',
+      'Advanced predictive capabilities provided strategic advantage in fast-moving financial markets',
+      'System identified recurring market patterns invisible to traditional analysis methods'
+    ],
+    technologies: ['LSTM Networks', 'GRU Models', 'TensorFlow', 'PyTorch', 'Scikit-Learn', 'Django Framework', 'PostgreSQL', 'Yahoo Finance API', 'NumPy', 'Pandas', 'Chart.js', 'D3.js', 'RESTful APIs'],
+    timeline: '8 months',
+    teamSize: '6 developers',
+    category: 'AI/ML & FinTech',
+    image: '/lovable-uploads/742334e5-8095-4ec8-9210-39132715718b.png',
+    metrics: [
+      { label: 'GRU MSE', value: '3.75e-4', description: 'Mean Squared Error performance' },
+      { label: 'Anomaly Detection', value: '95%', description: 'Market disruption identification accuracy' },
+      { label: 'Prediction Speed', value: '<500ms', description: 'Real-time response time' },
+      { label: 'User Satisfaction', value: '4.7/5', description: 'Platform satisfaction score' }
+    ],
+    keyFeatures: [
+      'Dual deep learning architecture with LSTM and GRU models',
+      'Real-time anomaly detection with mathematical precision scoring',
+      'Comprehensive 14-year historical data integration',
+      'Interactive dashboards with real-time prediction visualization',
+      'Advanced feature engineering with OHLC price integration',
+      'Automated alert system for unusual market behavior',
+      'Ensemble prediction capabilities for enhanced accuracy',
+      'Scalable Django architecture supporting concurrent users',
+      'PostgreSQL optimization for high-performance time-series data',
+      'Export functionality for comprehensive reporting and analysis'
+    ],
+    learnings: [
+      'GRU models demonstrated superior performance with 47% lower MSE compared to LSTM architecture',
+      '14-year historical dataset provided sufficient depth for robust pattern recognition and model training',
+      'Integration of multiple price points (OHLC) significantly improved prediction accuracy over single-price models',
+      'Careful regularization techniques were essential for preventing model overfitting to historical data',
+      'Django framework provided optimal balance of development speed and production performance requirements',
+      'PostgreSQL optimization was crucial for handling large-scale time-series data efficiently and reliably',
+      'Real-time streaming data integration required careful architecture planning for consistent performance',
+      'Production deployment required sophisticated model versioning and rollback capabilities for reliability',
+      'Careful tuning of anomaly detection thresholds balanced sensitivity with false positive rates effectively',
+      'Market context significantly influenced anomaly significance based on trading volumes and conditions',
+      'Anomaly patterns evolved over time, requiring adaptive detection algorithms for continued effectiveness',
+      'Incorporating user feedback substantially improved anomaly detection accuracy and system reliability',
+      'Stock price movements are influenced by numerous factors beyond historical price data patterns',
+      'Different time horizons required distinct modeling approaches and optimization strategies for accuracy',
+      'Prediction confidence intervals were crucial for effective risk management integration in practice',
+      'Clear, intuitive charts were essential for user adoption and effective decision-making processes'
+    ]
   }
 };
 
