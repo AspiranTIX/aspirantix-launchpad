@@ -38,6 +38,7 @@ const caseStudies = [
     gradient: 'from-orange-500 to-red-500'
   },
   {
+    id: 'yolo-object-detection',
     icon: Eye,
     title: 'YOLO Object Detection',
     description: 'Custom object detection system with specialized classes for industrial quality control and monitoring.',

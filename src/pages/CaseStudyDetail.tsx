@@ -211,6 +211,66 @@ const caseStudiesData: Record<string, CaseStudyData> = {
       'Caching strategies significantly reduced response latency for common queries',
       'Robust error handling was essential for managing corrupted or complex PDFs'
     ]
+  },
+  'yolo-object-detection': {
+    id: 'yolo-object-detection',
+    icon: Eye,
+    title: 'YOLO Object Detection System',
+    subtitle: 'Hybrid AI-Powered Fish Species Identification Platform',
+    description: 'Developed a revolutionary hybrid AI detection system combining YOLO\'s precise object detection capabilities with CLIP\'s zero-shot classification power, creating an adaptive fish species identification platform optimized for underwater environments.',
+    challenge: 'Marine research and underwater monitoring faced critical obstacles in automated fish species identification and real-time aquatic environment analysis: Species Recognition Complexity - Traditional object detection models struggled with the diverse morphology and behavior patterns of marine life. Underwater Environment Variables - Challenging conditions including varying light levels, water clarity, and dynamic underwater scenes affected detection accuracy. Real-Time Processing Requirements - Marine monitoring applications demanded immediate species identification for ecological research and commercial fishing. Limited Training Data - Insufficient labeled underwater imagery for comprehensive model training across diverse fish species. Scalability Constraints - Existing solutions couldn\'t handle large-scale deployment across multiple underwater monitoring stations. Classification Generalization - Models failed to identify new or rare species not present in original training datasets. Infrastructure Limitations - High computational requirements for accurate detection models exceeded typical deployment environments. The marine research community needed an intelligent system capable of accurately identifying fish species in real-time while adapting to new species without extensive retraining.',
+    solution: 'Developed a revolutionary hybrid AI detection system combining YOLO\'s precise object detection capabilities with CLIP\'s zero-shot classification power, creating an adaptive fish species identification platform optimized for underwater environments. Hybrid AI Architecture: YOLO Integration for advanced object detection with precise fish localization and bounding box generation, CLIP Integration for zero-shot classification enabling identification of previously unseen fish species, Hybrid Processing with seamless coordination between detection and classification models for comprehensive species analysis, and Adaptive Learning through continuous model improvement via real-time data pipeline integration. Advanced Data Pipeline: Real-Time Processing with continuous data ingestion and model refinement system, Underwater Simulation with specialized image augmentation replicating underwater lighting, turbidity, and environmental conditions, Quality Enhancement through automated image preprocessing for optimal detection performance, and Feedback Integration with user validation loops for continuous accuracy improvement. Cloud Infrastructure: AWS EC2 high-performance GPU instances for model training and inference, AWS S3 scalable storage for training datasets and model artifacts, AWS Lambda serverless processing for lightweight inference tasks and data preprocessing, and Auto-Scaling with dynamic resource allocation based on detection workload demands.',
+    results: [
+      'Achieved 94% species detection accuracy across diverse underwater conditions',
+      '35% increase in platform adoption across marine research institutions',
+      'Real-time detection capabilities enabling live monitoring and immediate classification',
+      'Zero-shot classification enabled identification of new species without model retraining',
+      'Automated species identification reduced manual analysis time by 80%',
+      'Enhanced data collection capabilities accelerated marine biodiversity studies',
+      'AWS deployment achieved optimal performance-to-cost ratio with 40% cost reduction',
+      'Successfully deployed across multiple monitoring stations with consistent performance',
+      'Improved model robustness in challenging underwater conditions through advanced augmentation',
+      'Real-time data pipeline enabled ongoing model enhancement without service interruption'
+    ],
+    technologies: ['YOLO (You Only Look Once)', 'CLIP (Contrastive Language-Image Pre-training)', 'PyTorch', 'AWS EC2', 'AWS S3', 'AWS Lambda', 'Computer Vision', 'TensorRT', 'ONNX', 'Docker', 'RESTful APIs'],
+    timeline: '6 months',
+    teamSize: '8 developers',
+    category: 'AI/ML & Computer Vision',
+    image: '/lovable-uploads/742334e5-8095-4ec8-9210-39132715718b.png',
+    metrics: [
+      { label: 'Detection Accuracy', value: '94%', description: 'Species identification precision' },
+      { label: 'User Adoption', value: '35%', description: 'Platform growth increase' },
+      { label: 'Processing Speed', value: '<200ms', description: 'Real-time response time' },
+      { label: 'Performance Rating', value: '4.9/5', description: 'System satisfaction score' }
+    ],
+    keyFeatures: [
+      'Dual-Model Architecture combining YOLO detection with CLIP classification',
+      'Zero-shot species identification without additional training requirements',
+      'Advanced underwater environment simulation and processing',
+      'Real-time data pipeline with continuous learning capabilities',
+      'Auto-scaling cloud infrastructure with cost optimization',
+      'Comprehensive species database with behavioral pattern recognition',
+      'Multi-scale detection across different fish sizes and distances',
+      'Confidence scoring for both detection and classification accuracy',
+      'Global deployment with high-availability redundancy',
+      'User validation workflows for continuous model improvement'
+    ],
+    learnings: [
+      'Hybrid model architecture combining YOLO and CLIP provided superior performance compared to single-model approaches',
+      'CLIP\'s zero-shot classification capability eliminated the need for extensive retraining when adding new species',
+      'Specialized underwater augmentation techniques significantly improved model robustness in challenging marine environments',
+      'AWS cloud infrastructure provided optimal balance of performance, scalability, and cost efficiency',
+      'Careful coordination between detection and classification models was crucial for system coherence',
+      'High-quality underwater simulation directly correlated with real-world performance improvements',
+      'Real-time data processing enabled continuous model enhancement without manual intervention',
+      'Dynamic scaling prevented over-provisioning while maintaining performance standards',
+      'Real-time processing capabilities were primary drivers of user adoption in research applications',
+      'High confidence scores were essential for species identification in scientific research contexts',
+      'User validation loops significantly improved model accuracy and reliability over time',
+      'Comprehensive system monitoring enabled proactive optimization and issue resolution',
+      'Systematic model versioning enabled safe updates and rollback capabilities when needed',
+      'Robust access controls were essential for protecting sensitive marine research data'
+    ]
   }
 };
 
