@@ -11,6 +11,7 @@ import TechStack from '@/components/sections/TechStack';
 import Testimonials from '@/components/sections/Testimonials';
 import ProjectIdea from '@/components/sections/ProjectIdea';
 import Contact from '@/components/sections/Contact';
+import Chatbot from '@/components/Chatbot';
 
 export default function Index() {
   const [activeSection, setActiveSection] = useState('');
@@ -74,6 +75,9 @@ export default function Index() {
       </main>
       
       <Footer />
+      
+      {/* Floating Chatbot */}
+      <Chatbot />
     </div>
   );
 }
