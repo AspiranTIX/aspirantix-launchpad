@@ -89,7 +89,7 @@ export default function Footer() {
           className="mt-8 pt-8 border-t border-navy-foreground/20 text-center"
         >
           <p className="text-sm text-navy-foreground/60">
-            Building intelligent software with Django, AI, and Cloud technology
+            Building intelligent web applications with modern frameworks, AI, and cloud technology.
           </p>
         </motion.div>
       </div>
