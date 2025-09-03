@@ -4,46 +4,46 @@ import { Badge } from '@/components/ui/badge';
 
 const techStack = [
   {
-    category: 'Backend & APIs',
+    category: 'Frontend Technologies',
     technologies: [
-      { name: 'Django', color: 'from-green-600 to-green-500' },
-      { name: 'Django REST Framework', color: 'from-green-500 to-emerald-500' },
-      { name: 'Python', color: 'from-blue-600 to-yellow-500' },
-      { name: 'PostgreSQL', color: 'from-blue-700 to-blue-500' },
-      { name: 'Redis', color: 'from-red-600 to-red-500' },
-      { name: 'Celery', color: 'from-green-700 to-green-600' }
-    ]
-  },
-  {
-    category: 'AI & Machine Learning',
-    technologies: [
-      { name: 'PyTorch', color: 'from-orange-600 to-red-500' },
-      { name: 'TensorFlow', color: 'from-orange-500 to-yellow-500' },
-      { name: 'YOLO', color: 'from-purple-600 to-purple-500' },
-      { name: 'Qdrant', color: 'from-blue-600 to-purple-600' },
-      { name: 'Pinecone', color: 'from-green-600 to-blue-600' },
-      { name: 'Weaviate', color: 'from-cyan-600 to-blue-600' }
-    ]
-  },
-  {
-    category: 'Cloud & Infrastructure',
-    technologies: [
-      { name: 'AWS EC2', color: 'from-orange-600 to-orange-500' },
-      { name: 'AWS S3', color: 'from-orange-500 to-red-500' },
-      { name: 'AWS Lambda', color: 'from-orange-700 to-orange-600' },
-      { name: 'Docker', color: 'from-blue-600 to-cyan-500' },
-      { name: 'Kubernetes', color: 'from-blue-700 to-purple-600' },
-      { name: 'Terraform', color: 'from-purple-600 to-blue-600' }
-    ]
-  },
-  {
-    category: 'Frontend & Mobile',
-    technologies: [
-      { name: 'Next.js', color: 'from-gray-800 to-gray-600' },
       { name: 'React', color: 'from-cyan-500 to-blue-500' },
+      { name: 'Next.js', color: 'from-gray-800 to-gray-600' },
       { name: 'TypeScript', color: 'from-blue-600 to-blue-800' },
       { name: 'Tailwind CSS', color: 'from-cyan-500 to-teal-500' },
-      { name: 'React Native', color: 'from-cyan-600 to-purple-600' }
+      { name: 'Framer Motion', color: 'from-pink-500 to-violet-500' },
+      { name: 'Vite', color: 'from-purple-600 to-blue-600' }
+    ]
+  },
+  {
+    category: 'AI Services & APIs',
+    technologies: [
+      { name: 'OpenAI GPT', color: 'from-green-600 to-emerald-500' },
+      { name: 'Claude AI', color: 'from-orange-600 to-red-500' },
+      { name: 'Google Gemini', color: 'from-blue-600 to-purple-600' },
+      { name: 'Anthropic API', color: 'from-purple-600 to-pink-500' },
+      { name: 'Hugging Face', color: 'from-yellow-500 to-orange-500' },
+      { name: 'Langchain', color: 'from-green-700 to-blue-600' }
+    ]
+  },
+  {
+    category: 'Backend & Database',
+    technologies: [
+      { name: 'Node.js', color: 'from-green-600 to-green-500' },
+      { name: 'Express.js', color: 'from-gray-700 to-gray-500' },
+      { name: 'PostgreSQL', color: 'from-blue-700 to-blue-500' },
+      { name: 'MongoDB', color: 'from-green-600 to-green-700' },
+      { name: 'Redis', color: 'from-red-600 to-red-500' },
+      { name: 'Supabase', color: 'from-green-500 to-emerald-600' }
+    ]
+  },
+  {
+    category: 'Cloud & DevOps',
+    technologies: [
+      { name: 'Vercel', color: 'from-gray-800 to-black' },
+      { name: 'AWS', color: 'from-orange-600 to-orange-500' },
+      { name: 'Docker', color: 'from-blue-600 to-cyan-500' },
+      { name: 'GitHub Actions', color: 'from-gray-700 to-gray-900' },
+      { name: 'Cloudflare', color: 'from-orange-500 to-yellow-500' }
     ]
   }
 ];
@@ -71,8 +71,8 @@ export default function TechStack() {
             <span className="text-gradient">Proven Tools</span> for Modern Solutions
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            We choose pragmatic, proven tools that ship fast and scale. 
-            Our technology stack is battle-tested in production environments.
+            We leverage cutting-edge web technologies and AI services to build intelligent, 
+            high-performance applications that scale with your business needs.
           </p>
         </motion.div>
 

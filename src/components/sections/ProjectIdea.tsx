@@ -253,13 +253,13 @@ export default function ProjectIdea({ onBookCall }: ProjectIdeaProps) {
                       className="h-12 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                     >
                       <option value="">Select project type</option>
-                      <option value="web-app">Web Application</option>
-                      <option value="ai-ml">AI/ML Solution</option>
-                      <option value="api">API Development</option>
-                      <option value="saas">SaaS Platform</option>
-                      <option value="ecommerce">E-commerce</option>
-                      <option value="fintech">Fintech Solution</option>
-                      <option value="edtech">EdTech Platform</option>
+                      <option value="web-app">Modern Web Application</option>
+                      <option value="ai-integration">AI-Powered Solution</option>
+                      <option value="chatbot">Intelligent Chatbot</option>
+                      <option value="analytics">Predictive Analytics</option>
+                      <option value="document-ai">Document Intelligence</option>
+                      <option value="saas">AI-Enhanced SaaS</option>
+                      <option value="ecommerce">Smart E-commerce</option>
                       <option value="other">Other</option>
                     </select>
                   </div>

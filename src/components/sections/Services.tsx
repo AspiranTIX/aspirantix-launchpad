@@ -18,39 +18,39 @@ interface ServicesProps {
 const services = [
   {
     icon: Globe,
-    title: 'Product Design & Prototyping',
-    description: 'Complete product conceptualization from user research to interactive prototypes and system architecture design.',
-    features: ['User Research & Analysis', 'UI/UX Design', 'Interactive Prototypes', 'System Architecture']
+    title: 'Modern Web Application Development',
+    description: 'Full-stack web applications using React, Next.js, Node.js with responsive design and optimal performance.',
+    features: ['React & Next.js Apps', 'Responsive Design', 'Progressive Web Apps', 'Performance Optimization']
   },
   {
     icon: Brain,
-    title: 'Requirement Analysis & Planning',
-    description: 'Comprehensive project analysis, technical specifications, and development roadmap creation.',
-    features: ['Business Requirements', 'Technical Specifications', 'Project Roadmaps', 'Risk Assessment']
+    title: 'AI Integration & Development',
+    description: 'Seamlessly integrate OpenAI, Claude, Gemini, and other AI services into your web applications.',
+    features: ['OpenAI GPT Integration', 'Claude API Implementation', 'Gemini AI Services', 'Custom AI Workflows']
   },
   {
     icon: MessageSquare,
-    title: 'Django Development & APIs',
-    description: 'Full-stack Django applications with REST/GraphQL APIs, real-time features, and scalable architecture.',
-    features: ['Django REST Framework', 'Real-time WebSockets', 'PostgreSQL/Redis', 'Authentication & Security']
+    title: 'Intelligent Chatbots & Assistants',
+    description: 'AI-powered chatbots with natural language processing, context awareness, and multi-platform deployment.',
+    features: ['Conversational AI', 'Context-Aware Responses', 'Multi-Platform Deploy', 'Analytics & Insights']
   },
   {
     icon: Brain,
-    title: 'AI/ML Solutions',
-    description: 'Custom AI models, chatbots with Vector DB, object detection, and intelligent automation systems.',
-    features: ['YOLO Object Detection', 'Vector Database Q&A', 'NLP & Text Analysis', 'AI Chatbots']
+    title: 'Predictive Analytics Systems',
+    description: 'Data-driven applications with machine learning models, real-time analytics, and intelligent forecasting.',
+    features: ['Real-time Analytics', 'Predictive Modeling', 'Data Visualization', 'Automated Insights']
   },
   {
     icon: GraduationCap,
-    title: 'EdTech & Automations',
-    description: 'Educational technology solutions including course video summarization and learning management systems.',
-    features: ['Video Summarization', 'PDF Document Chat', 'LMS Integration', 'Learning Analytics']
+    title: 'Document Intelligence & Processing',
+    description: 'AI-powered document analysis, content extraction, summarization, and intelligent search capabilities.',
+    features: ['Document Analysis', 'Content Extraction', 'Smart Summarization', 'Semantic Search']
   },
   {
     icon: Cloud,
-    title: 'Cloud Deployment & Scaling',
-    description: 'Complete cloud infrastructure with AWS, auto-scaling, monitoring, security, and production deployment.',
-    features: ['AWS Infrastructure', 'Auto-scaling Solutions', 'CI/CD Pipelines', 'Production Monitoring']
+    title: 'Cloud Architecture & Deployment',
+    description: 'Scalable cloud infrastructure with auto-scaling, monitoring, security, and high-performance deployment.',
+    features: ['Cloud Architecture', 'Auto-scaling Setup', 'Performance Monitoring', 'Security Implementation']
   }
 ];
 
@@ -77,8 +77,8 @@ export default function Services({ onBookCall }: ServicesProps) {
             <span className="text-gradient">Complete Project</span> Lifecycle Management
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            From initial concept and design to final deployment and scaling, 
-            we handle every aspect of your project with expertise and precision.
+            From modern web development to AI integration and intelligent features, 
+            we deliver comprehensive solutions that drive business growth and user engagement.
           </p>
         </motion.div>
 
@@ -142,8 +142,8 @@ export default function Services({ onBookCall }: ServicesProps) {
             Ready to Transform Your Business?
           </h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Let's discuss how our expertise in Django, AI, and cloud technologies 
-            can help you build the next generation of intelligent software.
+            Let's discuss how our expertise in modern web development, AI integration, 
+            and cloud technologies can help you build intelligent, scalable applications.
           </p>
           <Button
             onClick={onBookCall}

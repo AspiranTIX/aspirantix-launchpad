@@ -7,7 +7,7 @@ import { ChevronLeft, ChevronRight, Star, Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    content: "Aspirantix transformed our business with their AI chatbot solution. The team's expertise in Django and machine learning is exceptional. Our customer support efficiency improved by 70% within the first month.",
+    content: "Aspirantix transformed our customer service with their intelligent chatbot powered by OpenAI. The seamless integration and natural conversation flow increased our customer satisfaction by 85% and reduced response time dramatically.",
     author: "Sarah Chen",
     role: "CTO",
     company: "TechFlow Solutions",
@@ -15,26 +15,26 @@ const testimonials = [
     image: "/api/placeholder/64/64"
   },
   {
-    content: "The cloud infrastructure they built for us has been rock solid. Zero downtime in 8 months, and their AWS expertise saved us thousands in optimization. The team really knows how to scale applications properly.",
+    content: "Their AI-powered analytics platform built with React and Claude integration provides insights we never thought possible. The predictive capabilities have transformed our decision-making process and boosted revenue by 40%.",
     author: "Michael Rodriguez",
-    role: "Head of Engineering",
+    role: "Head of Product",
     company: "DataSync Corp",
     rating: 5,
     image: "/api/placeholder/64/64"
   },
   {
-    content: "Working with Aspirantix on our EdTech platform was amazing. Their video summarization AI and LMS integration exceeded our expectations. Students love the instant content summaries.",
+    content: "The intelligent document processing system they built using Gemini AI has revolutionized our workflow. What used to take hours of manual work now happens in minutes with incredible accuracy.",
     author: "Emily Watson",
-    role: "Product Manager",
-    company: "EduTech Innovations",
+    role: "Operations Director",
+    company: "DocuTech Solutions",
     rating: 5,
     image: "/api/placeholder/64/64"
   },
   {
-    content: "The Django application they developed handles our complex fintech requirements perfectly. Security, compliance, and performance are all top-notch. Couldn't be happier with the results.",
+    content: "Their modern web application with AI-powered features exceeded all expectations. The React/Next.js architecture is blazing fast, and the intelligent automation has streamlined our entire business process.",
     author: "David Kim",
     role: "Founder",
-    company: "FinanceFirst",
+    company: "SmartBiz AI",
     rating: 5,
     image: "/api/placeholder/64/64"
   }

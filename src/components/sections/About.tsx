@@ -6,23 +6,23 @@ import { Users, Award, Rocket, Shield } from 'lucide-react';
 const highlights = [
   {
     icon: Users,
-    title: '7+ years shipping SaaS & AI solutions',
-    description: 'From startup MVPs to enterprise-scale applications'
+    title: '7+ years building intelligent web applications',
+    description: 'From startup MVPs to enterprise AI-powered solutions'
   },
   {
     icon: Award,
-    title: '10+ engineers (Django, ML, AWS)',
-    description: 'Full-stack expertise with proven production experience'
+    title: 'Expert team (React, Node.js, AI APIs)',
+    description: 'Full-stack expertise with modern web technologies and AI integration'
   },
   {
     icon: Rocket,
-    title: 'From MVP to scale on cloud',
-    description: 'End-to-end development and deployment pipeline'
+    title: 'AI-first development approach',
+    description: 'Leveraging OpenAI, Claude, Gemini for intelligent features'
   },
   {
     icon: Shield,
-    title: 'Production-ready CI/CD',
-    description: 'Automated testing, security, and deployment workflows'
+    title: 'Production-optimized deployment',
+    description: 'High-performance applications with advanced monitoring'
   }
 ];
 
@@ -54,12 +54,12 @@ export default function About() {
           </Badge>
           <h2 className="text-3xl md:text-5xl font-bold font-poppins mb-6">
             Building the Future of{' '}
-            <span className="text-gradient">Intelligent Software</span>
+            <span className="text-gradient">AI-Powered Web Applications</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            We're a passionate team of engineers who believe in the power of intelligent software 
-            to transform businesses. Our expertise spans Django development, machine learning, 
-            and cloud infrastructure.
+            We're a passionate team of web development experts who specialize in creating intelligent 
+            applications powered by cutting-edge AI services. Our expertise spans modern web frameworks, 
+            AI integration, and scalable cloud architectures.
           </p>
         </motion.div>
 
@@ -73,19 +73,19 @@ export default function About() {
             <h3 className="text-2xl font-bold font-poppins mb-6">Our Story</h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Founded with a vision to bridge the gap between cutting-edge technology and 
-                practical business solutions, Aspirantix has grown from a small team of Django 
-                enthusiasts to a comprehensive software development powerhouse.
+                Founded with a vision to democratize AI technology through exceptional web applications, 
+                Aspirantix has evolved from a team of web development specialists to AI-first product 
+                development experts who understand both cutting-edge technology and business impact.
               </p>
               <p>
-                Our journey began with a simple belief: great software should be intelligent, 
-                scalable, and accessible. Today, we've helped dozens of companies transform 
-                their operations with AI-powered solutions built on robust, production-ready foundations.
+                Our journey began with a simple belief: AI should enhance human potential, not replace it. 
+                Today, we've helped dozens of companies integrate intelligent features into their web 
+                applications using modern AI services like OpenAI, Claude, and Gemini.
               </p>
               <p>
-                From chatbots that understand context to ML models that predict user behavior, 
-                we're not just building software—we're crafting the intelligent systems that 
-                will power tomorrow's businesses.
+                From intelligent document analysis to predictive analytics systems, we don't just build 
+                websites—we create AI-powered experiences that transform how businesses operate and 
+                how users interact with technology.
               </p>
             </div>
           </motion.div>

@@ -64,13 +64,13 @@ export default function Hero({ onBookCall, onSeeWork }: HeroProps) {
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed"
           >
             <p className="mb-4">
-              <strong>Product Design • Prototyping • System Architecture • Development • Deployment</strong>
+              <strong>Web Development • AI Integration • System Architecture • Cloud Deployment • Performance Optimization</strong>
             </p>
             <p className="mb-4">
-              With 7+ years handling complete project lifecycles, our 10+ member team transforms ideas into intelligent, scalable products using Django, AI, and Cloud technologies.
+              With 7+ years building intelligent web applications, our expert team creates scalable solutions using modern frameworks, AI services like OpenAI, Claude, Gemini, and cutting-edge cloud technologies.
             </p>
             <p>
-              Proven track record: <span className="text-primary font-semibold">SendWIN</span>, <span className="text-primary font-semibold">ChatCoach</span>, <span className="text-primary font-semibold">MaltaCard</span>, and <span className="text-primary font-semibold">UPx</span>.
+              Proven expertise: <span className="text-primary font-semibold">AI-Powered Analytics</span>, <span className="text-primary font-semibold">Intelligent Chatbots</span>, <span className="text-primary font-semibold">Predictive Systems</span>, and <span className="text-primary font-semibold">Real-time Applications</span>.
             </p>
           </motion.div>
 
