@@ -11,7 +11,7 @@ const highlights = [
   },
   {
     icon: Award,
-    title: 'Expert team (React, Node.js, AI APIs)',
+    title: 'Expert team (Figma, React, NextJS, Node.js, Django, AI APIs)',
     description: 'Full-stack expertise with modern web technologies and AI integration'
   },
   {
