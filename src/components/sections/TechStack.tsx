@@ -29,11 +29,11 @@ const techStack = [
     category: 'Backend & Database',
     technologies: [
       { name: 'Node.js', color: 'from-green-600 to-green-500' },
-      { name: 'Express.js', color: 'from-gray-700 to-gray-500' },
+      { name: 'Django', color: 'from-gray-800 to-gray-600' },
+      { name: 'Django REST Framework', color: 'from-indigo-600 to-indigo-400' },
       { name: 'PostgreSQL', color: 'from-blue-700 to-blue-500' },
-      { name: 'MongoDB', color: 'from-green-600 to-green-700' },
-      { name: 'Redis', color: 'from-red-600 to-red-500' },
-      { name: 'Supabase', color: 'from-green-500 to-emerald-600' }
+      { name: 'MySQL', color: 'from-gray-500 to-gray-400' },
+      { name: 'Redis', color: 'from-red-600 to-red-500' }
     ]
   },
   {

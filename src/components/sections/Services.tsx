@@ -19,8 +19,15 @@ const services = [
   {
     icon: Globe,
     title: 'Modern Web Application Development',
-    description: 'Full-stack web applications using React, Next.js, Node.js with responsive design and optimal performance.',
-    features: ['React & Next.js Apps', 'Responsive Design', 'Progressive Web Apps', 'Performance Optimization']
+    description: 'End-to-end product design and full-stack web application development using React, Next.js, Node.js, and Django. We focus on creating responsive, user-friendly, and high-performing applications with scalable architectures.',
+    features: [
+      'Product Design & Prototyping',
+      'React & Next.js Applications',
+      'Django & Node.js Backends',
+      'Responsive & Accessible UI/UX',
+      'Progressive Web Applications',
+      'Performance & Scalability Optimization'
+    ]
   },
   {
     icon: Brain,
